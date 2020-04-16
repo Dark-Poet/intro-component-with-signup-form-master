@@ -1,29 +1,37 @@
 *{
     box-sizing: border-box;
+    margin: 0;
+    padding:0;
     
 }
 
 p{
     font-size: 0.7rem;
 }
+
+body{
+    max-width: 1000px;
+    margin: 0 auto;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
 .container{
     background-image: url('./images/bg-intro-desktop.png');
     background-color: rgba(248, 55, 55, 0.762);
     font-family: Verdana, Geneva, Tahoma, sans-serif;
     color: white;
-    width: 900px;
-    height: 600px;
-   margin: 20px 200px;
-   
-    
-    
-    
-    
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    padding: 100px;
+    width: 100%;
 }
 .col1{
-  position: relative;
-  top: 220px;
- left: 95px;
 
 }
 .col2{
@@ -35,12 +43,6 @@ p{
     box-shadow: 0px 5px 5px rgba(84, 55, 55, 0.421);
     width: 350px;
     margin-bottom: 20px;
-    float: right;
-     margin-right: 80px;
-     position: relative;
-     bottom: 80px;
-    
-   
 }
 
 form{
@@ -50,12 +52,6 @@ form{
     box-shadow: 0px 10px 5px rgba(84, 55, 55, 0.421);
     width: 350px;
     height: 350px;
-    margin-right: 80px;
-    clear: both;
-    float: right;
-    position: relative;
-    bottom: 80px;
-    
 }
 
 input{
@@ -85,37 +81,21 @@ input{
 
 @media screen and (max-width:600px){
     .container{
-        width: 400px;
-        height: 800px;
+        justify-content: center;
+        padding: 100px 0;
     }
     .col2{
     width: 350px;
     margin-bottom: 20px;
-    float: right;
-     margin-right: 30px;
-     position: relative;
-     top: 150px;
 }
 form{
     width: 350px;
     height: 350px;
-    margin-right: 25px;
-    clear: both;
-    float: right;
-    position: relative;
-    top: 150px; 
     
 }
 .col1{
-  position: relative;
-  top:50px;
- left: 20px;
- font-size: 15px; 
-}
-
-    
-    
-
+ font-size: 15px;
+ margin-bottom: 50px;
 }
 
 .attribution {
